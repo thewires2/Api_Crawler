@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'crawler/style.css' %}">
+</head>
+<body>
+ <table class="content-table">
+  <thead>
+    <tr>
+    <th>Api</th>
+    <th>Description</th>
+    <th>Auth</th>
+    <th>https</th>
+    <th>Cors</th>
+    <th>Link</th>
+    <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for response in data %}
+    <tr>
+    <td>{{ response.Api }}</td>
+    <td>{{ response.Description}}</td>
+    <td>{{ response.Auth }}</td>
+    <td>{{ response.HTTPS }}</td>
+    <td>{{ response.Cors }}</td>
+    <td><a href="{{ response.Link }}">Link</a></td>
+    <td>{{ response.Category }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
