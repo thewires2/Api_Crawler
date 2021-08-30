@@ -1,4 +1,6 @@
-# Api Crawler
+# Api Crawler 
+
+### Docker Build
 
 ![Categories](https://user-images.githubusercontent.com/50923743/131301895-6df58ce4-df81-417f-9a6f-343bf15e0b32.jpg)
 
@@ -8,13 +10,14 @@
 
 2) Open the directory in the terminal and run the following commands 
 
-```docker-compose build
+```
+   docker-compose build
    docker-compose run python manage.py makemigrations
    docker-compose run python manage.py migrate
    docker-compose up
 ```
 
-> Some of the commands may throw an error on the intial execution, just retry the command again.
+> **Some of the commands may throw an error on the intial execution, just try the command again.**
 
 4) Goto [http://localhost:8000](http://localhost:8000) to see the list of categories Api's and [http://localhost:8000/category](http://localhost:8000/category) to see all the Api's 
 
@@ -23,7 +26,8 @@
 
 
 > Since the API is rate limited to 10 requests per user per minute it takes around 10 minutes to populate the entire database the first time you visit the Category section
-
+---
+> The Docker build uses postgres Database
 ---
 
 ## 2) Details of all the tables and their schema
