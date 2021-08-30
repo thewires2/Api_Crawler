@@ -106,6 +106,5 @@ Given more time i would have done the following tasks
 
 2) More robust error handling and following best practices for code
 
-3) Containerize the application with Docker
 
 
