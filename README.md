@@ -1,8 +1,14 @@
 # Api Crawler
 
+### Standard Version
+##### For the Docker implementation go to [https://github.com/thewires2/Api_Crawler/tree/docker](https://github.com/thewires2/Api_Crawler/tree/docker)
+
+
 ![Categories](https://user-images.githubusercontent.com/50923743/131301895-6df58ce4-df81-417f-9a6f-343bf15e0b32.jpg)
 
 ## 1) Steps to run the code 
+
+
 
 1) Download the code as a zip file and extract the folder.
 
@@ -103,6 +109,6 @@ Given more time i would have done the following tasks
 
 2) More robust error handling and following best practices for code
 
-3) Containerize the application with Docker
+3) Improve the Docker implementation of the project
 
 
