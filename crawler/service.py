@@ -49,11 +49,11 @@ def getapilist():
                 time.sleep(61)
                 response = requests.request("GET", url, headers=headers, data=payload)
                 k += 1
-                res = response.json()
                 try:
+                    res = response.json()
                     if not res['categories']:
                         break
-                except KeyError:
+                except KeyError or JSONDecodeError:
                     break
                 for j in res['categories']:
                     api = j['API']
@@ -72,7 +72,11 @@ def getapilist():
                 break
             count += 1
         if k >= 40:
-            token = createnewtoken()
+            try:
+                token = createnewtoken()
+            except JSONDecodeError:
+                time.sleep(60)
+                token = createnewtoken()
 
 
 def getcategory():
