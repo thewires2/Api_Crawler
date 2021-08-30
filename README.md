@@ -2,6 +2,8 @@
 
 ### Docker Build
 
+##### For the standard devlopment build go to [https://github.com/thewires2/Api_Crawler](https://github.com/thewires2/Api_Crawler)
+
 ![Categories](https://user-images.githubusercontent.com/50923743/131301895-6df58ce4-df81-417f-9a6f-343bf15e0b32.jpg)
 
 ## 1) Steps to run the code 
