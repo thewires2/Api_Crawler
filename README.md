@@ -19,7 +19,7 @@
 
 > **Some of the commands may throw an error on the intial execution, just try the command again.**
 
-4) Goto [http://localhost:8000](http://localhost:8000) to see the list of categories Api's and [http://localhost:8000/category](http://localhost:8000/category) to see all the Api's 
+4) Goto [http://localhost:8000](http://localhost:8000) to see the list of categories Api's and [http://localhost:8000/category](http://localhost:8000/category) to see all the Api's. **Don't go to http://0.0.0.0:8000/**
 
 ![List Categories](https://user-images.githubusercontent.com/50923743/131301064-aa9468d9-045a-4dd2-bc03-fe6582962f00.jpg)
 
