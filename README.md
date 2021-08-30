@@ -2,13 +2,25 @@
 
 ## 1) Steps to run the code 
 
-1) Download the code as a zip file and extract the folder . Open it with any code editor.
+1) Download the code as a zip file and extract the folder.
 
-2) Create a virtual enviornment using pipenv or virtualenv and run the command ```$ pip install -r requirements.txt``` in the directory to install all the required dependencies 
+2) Create a virtual enviornment using pipenv or virtualenv and run the command ```$ pip install -r requirements.txt``` in the root directory to install all the required dependencies 
+
+Example: 
+```cd demo
+   virtualenv venv
+   venv source/bin/activate
+   pip install -r requirements.txt
+```
 
 3) Use the command ```python manage.py migrate``` to create all the database tables and then ```python manage.py runserver 8080``` to run it on your localhost
 
 4) Goto [http://127.0.0.1:8080/](http://127.0.0.1:8080/) to see the list of categories Api's and [http://127.0.0.1:8080/category](http://127.0.0.1:8080/category) to see all the Api's 
+![List Categories](https://user-images.githubusercontent.com/50923743/131301064-aa9468d9-045a-4dd2-bc03-fe6582962f00.jpg)
+
+![Subcategory](https://user-images.githubusercontent.com/50923743/131301167-22f1fcb3-9b4e-47ce-8d57-b9be888d1b71.png)
+
+
 > Since the API is rate limited to 10 requests per user per minute it takes around 10 minutes to populate the entire database the first time you visit the Category section
 
 ---
