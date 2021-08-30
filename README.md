@@ -1,5 +1,7 @@
 # Api Crawler
 
+![Categories](https://user-images.githubusercontent.com/50923743/131301895-6df58ce4-df81-417f-9a6f-343bf15e0b32.jpg)
+
 ## 1) Steps to run the code 
 
 1) Download the code as a zip file and extract the folder.
@@ -16,20 +18,20 @@ Example:
 3) Use the command ```python manage.py migrate``` to create all the database tables and then ```python manage.py runserver 8080``` to run it on your localhost
 
 4) Goto [http://127.0.0.1:8080/](http://127.0.0.1:8080/) to see the list of categories Api's and [http://127.0.0.1:8080/category](http://127.0.0.1:8080/category) to see all the Api's 
+
 ![List Categories](https://user-images.githubusercontent.com/50923743/131301064-aa9468d9-045a-4dd2-bc03-fe6582962f00.jpg)
 
-![Subcategory](https://user-images.githubusercontent.com/50923743/131301167-22f1fcb3-9b4e-47ce-8d57-b9be888d1b71.png)
 
 
 > Since the API is rate limited to 10 requests per user per minute it takes around 10 minutes to populate the entire database the first time you visit the Category section
 
 ---
 
-2) Details of all the tables and their schema
+## 2) Details of all the tables and their schema
 
 There are two tables in this project:
 
-1) Categories
+### 1) Categories
 
 This is a simple table which just one column storing all the 45 categories of different API's 
 
@@ -44,7 +46,7 @@ STEPS TO RECREATE THE CATEGORY TABLE:
 
 ```CREATE TABLE "crawler_category" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL)```
 
-2) Sub-Categories
+### 2) Sub-Categories
 
 This is a table which is used for storing the different kind's of API'S with the detail's supplied the API'S call
 
@@ -61,39 +63,39 @@ STEPS TO RECREATE THE SUB-CATEGORY TABLE:
 
 ---
 
-3)Points to achieve
+## 3)Points to achieve
 
-1. OOPS
+#### 1. OOPS
 
 The project follows the core- concepts of OOP's like encapsulation and data abstraction
 
-2. Support for handling authentication requirements & token expiration of server
+#### 2. Support for handling authentication requirements & token expiration of server
 
 This is done by regenerating the bearer token after every 5 minutes until all the data is generated.
 
-3. Support for pagination to get all data
+#### 3. Support for pagination to get all data
 
 Pagination is fully supported for both the API's lists and Categories
 
-4. Develop work around for rate limited server
+#### 4. Develop work around for rate limited server
 
 The workaround for the rate limited server is filled by using time delay's
 
-5. Crawled all API entries for all categories and stored it in a database
+#### 5. Crawled all API entries for all categories and stored it in a database
 
 This was also successfully implemented
 
 
 ---
 
-What is not done from “Points to achieve”.
+### 4) What is not done from “Points to achieve”.
 
 Done all the tasks in Points to Achieve
 
 
 ---
 
-What would you improve if given more days
+### 5)What would you improve if given more days
 
 Given more time i would have done the following tasks
 
