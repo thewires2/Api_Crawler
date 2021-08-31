@@ -22,7 +22,13 @@ Example:
    pip install -r requirements.txt
 ```
 
-3) Use the command ```python manage.py migrate``` to create all the database tables and then ```python manage.py runserver 8080``` to run it on your localhost
+3) Run the following commands
+
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver 8080
+```
 
 4) Goto [http://127.0.0.1:8080/](http://127.0.0.1:8080/) to see the list of categories Api's and [http://127.0.0.1:8080/category](http://127.0.0.1:8080/category) to see all the Api's 
 
