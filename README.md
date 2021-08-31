@@ -14,8 +14,8 @@
 
 ```
    docker-compose build
-   docker-compose run python manage.py makemigrations
-   docker-compose run python manage.py migrate
+   docker-compose run web python3 manage.py makemigrations
+   docker-compose run web python3 manage.py migrate
    docker-compose up
 ```
 
