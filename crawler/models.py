@@ -14,7 +14,7 @@ class SubCategory(models.Model):
     Auth = models.CharField(max_length=500, default=None)
     HTTPS = models.CharField(max_length=500, default=None)
     Cors = models.CharField(max_length=100, default=None)
-    Link = models.CharField(max_length=100, default=None)
+    Link = models.CharField(max_length=200, default=None)
     Category = models.CharField(max_length=100)
 
     def __dir__(self):
