@@ -15,9 +15,10 @@
 2) Create a virtual enviornment using pipenv or virtualenv and run the command ```$ pip install -r requirements.txt``` in the root directory to install all the required dependencies 
 
 Example: 
-```cd demo
+```
+   cd Api_Crawler-master
    virtualenv venv
-   venv source/bin/activate
+   source venv/bin/activate
    pip install -r requirements.txt
 ```
 
