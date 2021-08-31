@@ -27,7 +27,8 @@ def getapilist():
                 'Authorization': f"Bearer {token}"
             }
             try:
-                response = requests.request("GET", url, headers=headers, data=payload)
+                response = requests.request(
+                    "GET", url, headers=headers, data=payload)
                 k += 1
                 res = response.json()
                 if not res['categories']:
@@ -47,13 +48,14 @@ def getapilist():
                     b.save()
             except JSONDecodeError:
                 time.sleep(61)
-                response = requests.request("GET", url, headers=headers, data=payload)
+                response = requests.request(
+                    "GET", url, headers=headers, data=payload)
                 k += 1
+                res = response.json()
                 try:
-                    res = response.json()
                     if not res['categories']:
                         break
-                except KeyError or JSONDecodeError:
+                except KeyError:
                     break
                 for j in res['categories']:
                     api = j['API']
@@ -63,15 +65,16 @@ def getapilist():
                     cors = j['Cors']
                     link = j['Link']
                     category_ = j['Category']
-                    print(api, category_)
+                    #print(api, category_)
                     b = SubCategory(Api=api, Description=desc, Auth=auth, HTTPS=https, Cors=cors, Link=link,
                                     Category=category_)
-                    print("SAVED IN THE DATABASE")
+                    #print("SAVED IN THE DATABASE")
                     b.save()
             except KeyError:
                 break
             count += 1
-        if k >= 40:
+        if k >= 45:
+            k=0
             try:
                 token = createnewtoken()
             except JSONDecodeError:
