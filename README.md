@@ -19,7 +19,6 @@
    docker-compose up
 ```
 
-> **Some of the commands may throw an error on the intial execution, just try the command again.**
 
 4) Goto [http://localhost:8000](http://localhost:8000) to see the list of categories Api's and [http://localhost:8000/category](http://localhost:8000/category) to see all the Api's. **Don't go to http://0.0.0.0:8000/**
 
